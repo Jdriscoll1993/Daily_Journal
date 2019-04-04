@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="src/styles/journal.css">
+</head>
+<body>
+    <h1>Daily Journal</h1>
+    <form action="">
+        <fieldset>
+            <label for="journalDate"><strong>Date of Entry</strong></label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+        <fieldset>
+            <label for="coveredConcepts"><strong>Concepts Covered</strong></label>
+            <input type="text" name="coveredConcepts" id="coveredConcepts">
+        </fieldset>
+        <fieldset>
+            <label for="journalEntry"><strong>Journal Entry</strong></label>
+            <textarea rows="4" cols="75"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="mood">Mood</label>
+            <select type="" name="mood" id="mood">
+                <option value="default">Default</option>
+                <option value="confident">Confident</option>
+                <option value="confused">Confused</option>
+                <option value="onTop">On top of shit</option>
+                <option value="ahhhh">AHHHHHHH!!!!!</option>
+                <option value="tired">Tired</option>
+                <option value="trap">It's a trap!</option>
+            </select>
+        </fieldset>
+        <fieldset>
+                <label for="additionalComments" id="additionalComments">Additional Comments</label>
+                
+                <textarea rows="15" cols="75"></textarea>
+            </fieldset>
+        <fieldset>
+                <button class="record" type="submit">Record Journal Entry</button>
+        </fieldset> </br>
+    </form>
+    
+
+    <footer>&copy Copyright 2019 Joey's Journal😗😗😗</footer>
+</body>
+</html>

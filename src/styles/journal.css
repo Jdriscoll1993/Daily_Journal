@@ -1,0 +1,92 @@
+
+
+body {
+    background: linear-gradient(#e69b11, transparent 85%), 
+    linear-gradient(0deg, #fff, transparent 80%),
+    url(/dm1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+fieldset {
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-item: center;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+
+}
+
+textarea {
+    resize: none;
+    opacity: 1;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 15px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+}
+
+
+fieldset {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+}
+
+#coveredConcepts {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#journalDate  {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mood {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    
+}
+
+.record {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+#additionalComments {
+    font-size:25px;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    resize: none;
+    width: 200px;
+    display:flex;
+}
+
+footer {
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+}
