@@ -21,5 +21,5 @@ const functionsEntry = {
     mood: "default",
     id: 3
 }
-entries.push(objectsEntry, loopsEntry);
+entries.push(objectsEntry, loopsEntry, functionsEntry);
 console.log(entries);
