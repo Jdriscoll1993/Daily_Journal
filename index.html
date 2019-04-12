@@ -9,10 +9,11 @@
 </head>
 <body>
     <h1>Daily Journal</h1>
+    <div class="box red"></div>
     <form action="">
-        <fieldset>
+        <fieldset> <!--fieldset element represents a set of form controlls that are optionally grouped under a common name-->
             <label for="journalDate"><strong>Date of Entry</strong></label>
-            <input type="date" name="journalDate" id="journalDate">
+            <input type="date" name="journalDate" id="journalDate"> <!-- input element represents a typed data field usually within a form control to let user edit the data-->
         </fieldset>
         <fieldset>
             <label for="coveredConcepts"><strong>Concepts Covered</strong></label>
@@ -24,7 +25,7 @@
         </fieldset>
         <fieldset>
             <label for="mood">Mood</label>
-            <select type="" name="mood" id="mood">
+            <select type="" name="mood" id="mood"> <!--select element represents a control for selecting amongst the options-->
                 <option value="default">Default</option>
                 <option value="confident">Confident</option>
                 <option value="confused">Confused</option>
@@ -46,5 +47,6 @@
     
 
     <footer>&copy Copyright 2019 Joey's Journal😗😗😗</footer>
+    <script src="src/scripts/journal.js"></script>
 </body>
 </html>

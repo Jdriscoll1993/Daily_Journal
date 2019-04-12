@@ -3,11 +3,14 @@
 body {
     background: linear-gradient(#e69b11, transparent 85%), 
     linear-gradient(0deg, #fff, transparent 80%),
-    url(/dm1.jpg) no-repeat center;
+    url(/src/img/dm1.jpg) no-repeat center;
     background-size: cover;
 }
 
 fieldset {
+
+    border: 5px;
+    border-color: black;
     border: 0px;
     display: flex;
     flex-direction: column;
