@@ -1,4 +1,5 @@
 console.log('journal.js');
+//DAILY JOURNAL EXERCISE 2
 const entries = []
 const objectsEntry = {
     date: "4.11.2019",
