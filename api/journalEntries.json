@@ -1,0 +1,36 @@
+{
+  "journalEntries": [
+    {
+      "id": "1",
+      "date": "4-11-2019",
+      "concept": "Introduced objects",
+      "content": "Took a dive into objects, arrays, and the differences betwen them",
+      "mood": "default",
+      "additional": "n/a"
+    },
+    {
+      "id": "2",
+      "date": "4-11-2019",
+      "concept": "Experimented with different types of loops",
+      "content": "For loops, For Each loops--down the road we'll be looking into other types of loops.",
+      "mood": "default",
+      "additional": "n/a"
+    },
+    {
+      "id": "3",
+      "date": "4-11-2019",
+      "concept": "Introduced functions",
+      "content": "Experimented with creating functions and calling them.",
+      "mood": "default",
+      "additional": "n/a"
+    },
+    {
+      "date": "2019-04-19",
+      "concept": "Fetch API",
+      "content": "I am now able to open my daily journal and see past entries populated on the DOM. I can add another entry and it will populate under existing entries, and the data will also be stored in my corresponding .json file. COOL!",
+      "mood": "ahhhh",
+      "additional": "This particular concept is something I understand from a logical standpoint, but still am having trouble with syntax, and figuring out how to structure my code. The same goes for most of these exercises. I am getting through them with the help of my instructors and piers, but am unable to follow the code as much as I'd like to. Work on this! Follow your code! Understand what its doing!",
+      "id": "4"
+    }
+  ]
+}

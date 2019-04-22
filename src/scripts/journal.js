@@ -1,26 +1,43 @@
-console.log('journal.js');
-//DAILY JOURNAL EXERCISE 2
-const entries = []
-const objectsEntry = {
-    date: "4.11.2019",
-    concept: "Introduced objects",
-    content: "Took a dive into objects, arrays, and the differences betwen them",
-    mood: "default",
-    id: 1
+const eLog = document.querySelector(".entryLog");
+const submit = document.querySelector(".record");
+
+submit.addEventListener("click", function(event) {
+  console.log(event);
+  event.preventDefault();
+  const entry = {
+    date: document.querySelector("#journalDate").value,
+    concept: document.querySelector("#coveredConcepts").value,
+    content: document.querySelector("#journalEntry").value,
+    mood: document.querySelector("#mood").value,
+    additional: document.querySelector("#addComs").value
+  };
+  fetch("http://localhost:3000/journalEntries", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(entry)
+  })
+    .then(res => res.json()) // Parse as JSON
+    .then(getEntries);
+});
+
+function getEntries() {
+  eLog.innerHTML = "";
+  fetch("http://localhost:3000/journalEntries")
+    .then(res => res.json())
+    .then(entries => {
+      entries.forEach(entry => {
+        console.log(entry);
+        eLog.innerHTML += `<div>
+            <h2>Journal Entry (# ${entry.id}) Date: ${entry.date}</h2>
+            <h2>Concepts Coverered: ${entry.concept}</h2>
+            <h2>Current Mood: ${entry.mood}</h2></br>
+            <h3>Entry Content: ${entry.content}</h3>
+            <h4><strong>Additional Comments: ${entry.additional}</strong></h4>
+            </br><hr></br>`;
+      });
+    });
 }
-const loopsEntry = {
-    date: "4.11.2019",
-    concept: "Experimented with different types of loops",
-    content: "For loops, For Each loops--down the road we'll be looking into other types of loops.",
-    mood: "default",
-    id: 2
-}
-const functionsEntry = {
-    date: "4.11.2019",
-    concept: "Introduced functions",
-    content: "Experimented with creating functions and calling them.",
-    mood: "default",
-    id: 3
-}
-entries.push(objectsEntry, loopsEntry, functionsEntry);
-console.log(entries);
+
+getEntries();

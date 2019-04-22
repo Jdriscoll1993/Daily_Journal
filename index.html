@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,16 @@
     <title>Daily Journal</title>
     <link rel="stylesheet" type="text/css" media="screen" href="src/styles/journal.css">
 </head>
+
 <body>
     <h1>Daily Journal</h1>
     <div class="box red"></div>
     <form action="">
-        <fieldset> <!--fieldset element represents a set of form controlls that are optionally grouped under a common name-->
+        <fieldset>
+            <!--fieldset element represents a set of form controlls that are optionally grouped under a common name-->
             <label for="journalDate"><strong>Date of Entry</strong></label>
-            <input type="date" name="journalDate" id="journalDate"> <!-- input element represents a typed data field usually within a form control to let user edit the data-->
+            <input type="date" name="journalDate" id="journalDate">
+            <!-- input element represents a typed data field usually within a form control to let user edit the data-->
         </fieldset>
         <fieldset>
             <label for="coveredConcepts"><strong>Concepts Covered</strong></label>
@@ -21,32 +25,37 @@
         </fieldset>
         <fieldset>
             <label for="journalEntry"><strong>Journal Entry</strong></label>
-            <textarea rows="4" cols="75"></textarea>
+            <textarea id="journalEntry" rows="4" cols="75"></textarea>
         </fieldset>
         <fieldset>
             <label for="mood">Mood</label>
-            <select type="" name="mood" id="mood"> <!--select element represents a control for selecting amongst the options-->
-                <option value="default">Default</option>
-                <option value="confident">Confident</option>
-                <option value="confused">Confused</option>
-                <option value="onTop">On top of shit</option>
-                <option value="ahhhh">AHHHHHHH!!!!!</option>
-                <option value="tired">Tired</option>
-                <option value="trap">It's a trap!</option>
+            <select type="" name="mood" id="mood">
+                <!--select element represents a control for selecting amongst the options-->
+                <option value="Default">Default</option>
+                <option value="Confident">Confident</option>
+                <option value="Confused">Confused</option>
+                <option value="On top of shit">On Top Of Shit</option>
+                <option value="AHHHHHH!">AHHHHHHH!!!!!</option>
+                <option value="Tired">Tired</option>
+                <option value="It's a Trap!">It's a Trap!</option>
             </select>
         </fieldset>
         <fieldset>
-                <label for="additionalComments" id="additionalComments">Additional Comments</label>
-                
-                <textarea rows="15" cols="75"></textarea>
-            </fieldset>
+            <label for="additionalComments" id="additionalComments">Additional Comments</label>
+
+            <textarea id="addComs" rows="15" cols="75"></textarea>
+        </fieldset>
         <fieldset>
-                <button class="record" type="submit">Record Journal Entry</button>
+            <button class="record">Record Journal Entry</button>
         </fieldset> </br>
     </form>
-    
+    <article class="entryLog">
+
+    </article>
+
 
     <footer>&copy Copyright 2019 Joey's Journal😗😗😗</footer>
     <script src="src/scripts/journal.js"></script>
 </body>
+
 </html>
